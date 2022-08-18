@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Kalam&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Kalam", cursive;
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items:center;
+  justify-content:space-evenly;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("background-image.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+.body-container {
+  height: 50%;
+  width: 50%;
+  border: 1px solid black;
+  padding: 20px 10px 10px 10px;
+  background-color: #e2e0e0;
+  border-radius: 8px;
+  align-self: flex-start;
+}
+
+.heading {
+  width: 100%;
+  height: fit-content;
+  display: block;
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding: 5.5px;
+  margin-bottom: 8.5px;
+}
+
+.display-container {
+  display: flex;
+  /* flex-wrap: nowrap;
+  flex-direction: row-reverse; */
+  width: 100%;
+  height: 22%;
+  margin-bottom: 5.5px;
+  line-height: 1.3rem;
+  padding: 12px 10px 7px 10px;
+  font-size: larger;
+  font-weight: 600;
+  justify-content: end;
+  align-items: flex-end;
+  background-color: #f5f5f5;
+  overflow: hidden;
+  border-radius: 1.5px;
+}
+
+.buttons-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  width: 100%;
+  height: 60%;
+  gap: 2px;
+}
+
+button {
+  outline: none;
+  border: none;
+  background-color: #fff;
+  font-size: medium;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 1.5px;
+  transition: all .45s;
+}
+
+button:hover{
+  background-color: rgb(206, 184, 184);
+  color: black;
+
+}
+
+#result {
+  /* background-color: #1f1d1c; */
+  background-color: rgb(68, 66, 66);
+  color: #fff;
+}
+
+.b-side {
+  color: #fff;
+  background-color: #c14444;
+}
+
+#display {
+  font-size: 1.5rem;
+  color: rgb(37, 36, 36);
+}
+
+#name{
+  margin-left: 20px;
+  display: flex;
+    width: 100%;
+    text-align: start;
+    font-size: xx-large;
+    color: rgb(240, 229, 229);
+    font-weight: 900;
+    align-items: center;
+}
+
+img{
+  height: 50px;
+  border-radius: 15px;
+  margin-right: 20px;
+}
+
+.ac{
+  background-color: rgb(224, 179, 31);
+
+}
+
+@media screen and (max-width: 915px) {
+  .body-container {
+    height: 55%;
+    width: 70%;
+    border-radius: 4px;
+  }
+
+  button {
+    font-size:1.5rem;
+    border-radius: 1.5px;
+   
+  }
+  #display {
+    font-size: 2.2rem;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  .body-container {
+    height: 60%;
+    width: 95%;
+    border-radius: 4px;
+  }
+
+  button {
+    font-size:1.2rem;
+    border-radius: 1.5px;
+  }
+  #display {
+    font-size: 1.8rem;
+  }
+}
+
